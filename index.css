@@ -27,8 +27,8 @@ body {
 #overall-div {
     padding: 1.5em;
     outline: solid 2px red;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h1 {
 }
 
 #text-section {
-    padding-inline: 2em;
+    padding: 2em;
     width: 70%;
     margin: 0 auto;
 }
@@ -58,7 +58,7 @@ h1 {
     font-family: "Life Savers";
     font-size: 2em;
     line-height: 1.75;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 #get-started-a {
