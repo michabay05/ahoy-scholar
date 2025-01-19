@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-yellow: #fce655;
+    --primary-font: "Architects Daughter", "Times New Roman";
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: url("./pirate-img.png");
+    font-family: var(--primary-font);
+}
+
+#page-title {
+    color: #000;
+    text-align: center;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#input-div {
+    display: flex;
+    justify-content: center;
+}
+
+#traffic-input, #amount-input, #word-count-input {
+    margin-block: 1em;
+    margin-right: .6em;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border: solid 2px var(--clr-yellow);
+    border-radius: 0.2em;
+    font-size: 1.3em;
+}
+
+#output-p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#generate-btn {
+    margin: 0 auto;
+    padding: .75em 2em;
+    max-width: 30em;
+    font-size: 1.2em;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 0.25em;
+    border: none;
+    background-color: var(--clr-yellow);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
