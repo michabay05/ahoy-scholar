@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="second.css">
+    <title>AhoyScholar Calculator</title>
+</head>
+<body>
+    <nav>
+        <h1 id="page-title">AhoyScholar Calculator</h1>
+    </nav>
+    <main>
+        <div class="input-div">
+            <input id="site-input" type="text" placeholder="Scholarship URL (https://)"/>
+            <input id="amount-input" type="number" placeholder="Scholarshp Amount" />
+            <input id="word-count-input" type="number" placeholder="Essay Word Count" />
+        </div>
+        <button id="generate-btn">Generate</button>
+    </main>
+
+    <section id="output-section">
+        <h3 id="ouptut-header-h3">Estimated Scholarship Value</h3>
+        <h2>
+            <span id="scholarship-value-span"></span>
+            out of 10
+        </h2>
+    </section>
+    
+    <script src="main.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Life+Savers:wght@400;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-yellow: #fce655;
+    --clr-cyan: #20c3ba;
+    --primary-font: "Architects Daughter";
+    --aux-font: "Life Savers";
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: url("./pirate-img.svg");
+    background-size: 125vw;
+    /* background-origin: border-box; */
+    background-position: 30% 15%;
+    font-family: var(--primary-font);
+}
+
+#page-title {
+    color: #000;
+    text-align: center;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#input-div {
+    display: grid;
+    row-gap: .6em;
+    column-gap: 1em;
+    grid-template-areas: 
+        "siteLink siteLink"
+        "amount wordCount";
+}
+
+#site-input {
+    grid-area: siteLink;
+}
+
+#amount-input {
+    grid-area: amount;
+}
+
+#word-count-input {
+    grid-area: wordCount;
+}
+#traffic-input, #amount-input, #word-count-input, #site-input {
+    padding: 0.5em 1em;
+    display: inline-block;
+    border: solid 2px var(--clr-yellow);
+    border-radius: 0.2em;
+    font-size: 1.3em;
+}
+
+#output-p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#generate-btn {
+    display: block;
+    width: fit-content;
+    margin: 1em auto;
+    padding: .5em 1.25em;
+    max-width: 30em;
+    font-size: 1.5em;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 0.25em;
+    border: none;
+    background-color: var(--clr-yellow);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#output-section {
+    display: block;  
+    background-color: var(--clr-cyan);
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: var(--aux-font);
+    padding: 0.4em 1em;
+    border: none;
+    border-radius: 0.5em;
+    margin-block: 2em;
+
+    /* This will be controlled from JS */
+    display: none;
+}
+
+#ouptut-header-h3 {
+    font-size: 2em;
+}
+
+#output-section > h2 {
+    font-size: 2em;
+}
+
+#scholarship-value-span {
+    font-size: 2em;
+}
