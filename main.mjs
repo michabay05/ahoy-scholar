@@ -25,9 +25,9 @@ window.onload = async () => {
         const FULL_URL = `${BASE_URL}?domains[]=${url}`;
         console.log("URL:", FULL_URL);
 
-        // const corsProxy = 'https://cors-anywhere.herokuapp.com/';
+        const corsProxy = 'https://cors-anywhere.herokuapp.com/';
         // const corsProxy = "https://crossorigin.me/";
-        const corsProxy = "https://thingproxy.freeboard.io/fetch/";
+        // const corsProxy = "https://thingproxy.freeboard.io/fetch/";
         // const FINAL_URL = "http://localhost:3000/api/v1.0/getPageRank?domain=google.com";
         const FINAL_URL = corsProxy + FULL_URL;
         console.log("URL:", FINAL_URL);
